@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<project name="AssemblyCatalog-test2">
+  <taskdef resource="PCT.properties" />
+
+  <target name="test">
+    <PCTRun procedure="Consultingwerk/assembliesCatalog.p" parameter="assemblies.json" dlcHome="${DLC}" assemblies=".">
+    	<propath><pathelement location="." />
+    	</propath>
+      <Option name="-clrnetcore" />
+    </PCTRun>
+  </target>
+
+</project>
